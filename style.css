@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --color-white: #fff;
+    --color-black: #000000;
+    --color-dark-purple: #231638;
+    --color-purple: #6F1AF2;
+}
+
+.container {
+    width: 80%;
+    padding: 40px 0 0 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: 'Poppins';
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    padding-left: 3%;
+    width: 120px;
+}
+
+.menu-nav {
+    padding-right: 3%;
+    height: 100%;
+}
+
+.menu {
+    height: 100%;
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    padding-top: 5%;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: var(--color-white);
+    text-transform: uppercase;
+    height: 100%;
+    padding: 39px 10px;
+}
+.menu li a {
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--color-dark-purple);
+    text-transform: uppercase;
+    height: 100%;
+    padding: 39px 10px;
+    transition: all 250ms ease-in-out;
+}
+.menu li a:hover {
+    color: var(--color-white);
+    background: var(--color-purple);
+}
+
+.banner-section {
+    background: var(--color-purple);
+    display: flex;
+    justify-content: center;
+}
+
+.banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px 40px 0 40px;
+}
+
+.banner img {
+    width: 400px;
+    padding-bottom: -35px;
+}
+.banner img:hover {
+    transform: scale(1.03);
+}
+
+.texto-banner {
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.texto-banner .destaque {
+    color: #231638;
+}
+
+.texto-banner p {
+    font-size: 13px;
+    padding: 30px 0;
+}
+
+.button {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color-purple);
+    background: var(--color-white);
+    width: 200px;
+    text-align: center;
+    padding: 8px;
+    border-radius: 5px;
+}
+.button:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 20px var(--color-dark-purple);
+}
+
+
