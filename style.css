@@ -32,12 +32,12 @@ header {
 }
 
 .logo {
-    padding-left: 3%;
+    padding-left: 5%;
     width: 120px;
 }
 
 .menu-nav {
-    padding-right: 3%;
+    padding-right: 5%;
     height: 100%;
 }
 
@@ -90,6 +90,7 @@ header {
 }
 .banner img:hover {
     transform: scale(1.03);
+    transition: all 0.2s ease-in;
 }
 
 .texto-banner {
@@ -98,7 +99,7 @@ header {
     flex-direction: column;
     justify-content: center;
 }
-.texto-banner .destaque {
+.destaque-escuro {
     color: #231638;
 }
 
@@ -119,9 +120,71 @@ header {
     padding: 8px;
     border-radius: 5px;
 }
+.button-roxo {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color-white);
+    background: var(--color-purple);
+    width: 200px;
+    text-align: center;
+    padding: 8px;
+    border-radius: 5px;
+}
 .button:hover {
     transform: scale(1.1);
     box-shadow: 2px 2px 20px var(--color-dark-purple);
 }
+.button-roxo:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 20px var(--color-dark-purple);
+}
 
+.loop-section {
+    display: flex;
+    justify-content: center;
+}
 
+.loop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+}
+
+.texto-loop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-loop {
+    color: var(--color-purple);
+}
+.divisoria-titulo {
+    margin-top: 10px;
+    background: var(--color-purple);
+    height: 5px;
+    width: 120px;
+    border-radius: 10px;
+}
+
+.imagem-loop {
+    width: 600px;
+}
+
+.loop-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.card {
+    width: 150px;
+}
+.card:hover {
+    transform: scale(1.08);
+    transition: all 0.2s ease-in;
+}
