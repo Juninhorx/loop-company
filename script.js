@@ -9,7 +9,6 @@ const maxItens = itens.length
 controls.forEach(control => {
     control.addEventListener('click', () => {
         const isLeft = control.classList.contains('arrow-left')
-        console.log(currentItem)
         if (isLeft){
             currentItem -= 1
         } else {
