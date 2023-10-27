@@ -7,13 +7,13 @@
     <title>Loop Company</title>
   </head>
   <body>
-    <header>
+    <header id="header">
       <img class="logo" src="assets/img/logo.png" alt="Logo da Loop Company" />
       <nav class="menu-nav">
         <ul class="menu">
-          <li><a href="#">o que fazemos</a></li>
-          <li><a href="#">benefícios</a></li>
-          <li><a href="#">perguntas frequentes</a></li>
+          <li><a href="#gallery">o que fazemos</a></li>
+          <li><a href="#beneficios">benefícios</a></li>
+          <li><a href="#faq-section">perguntas frequentes</a></li>
         </ul>
       </nav>
     </header>
@@ -82,7 +82,7 @@
             mais resultados
           </p>
         </div>
-        <div class="gallery-container">
+        <div class="gallery-container" id="gallery">
           <button class="arrow-left control" aria-label="previousImage">
             &lt;
           </button>
@@ -141,20 +141,62 @@
         </div>
       </section>
       <section class="table-section">
-        <div class="table-holder">
+        <div class="table-holder" id="beneficios">
           <h2 class="titulo-carrossel">Porquê escolher a <span class="destaque">Loop Company?</span></h2>
           <img class="img-table" src="./assets/img/table.png" alt="">
           <a href="#" class="button-roxo">agendar uma reunião</a>
         </div>
       </section>
-      <section class="faq-section">
+      <section class="faq-section" id="faq-section">
         <h2 class="titulo-carrossel">Porquê escolher a <span class="destaque">Loop Company?</span></h2>
         <div class="divisoria-titulo"></div>
-        <div class="faq-holder">
-          
+        <div class="faq-holder" id="faq-holder">
+          <details class="faq">
+            <summary class="faq-titulo">Ainda não tenho certeza se a Loop Company vai atender as necessidades da minha empresa.</summary>
+            <p class="faq-texto">Entendemos que todos os negócios possuem as suas particularidades. É por esse motivo que atuaremos como uma parceira de negócios para a sua empresa, com o intuito de estarmos atentos a cada detalhe específico que o seu modelo de negócio exige, seja ele de pequeno, médio ou grande porte.</p>
+          </details>
+          <details class="faq">
+            <summary class="faq-titulo">Já investi muito em outras agências. Tenho medo de tentar com vocês e não dar certo.</summary>
+            <p class="faq-texto">
+              A Loop Company não é uma agência, mas sim uma Assessoria de Marketing digital. A principal diferença está no objetivo de cada uma. Uma agência foca-se em criar campanhas que promovam a própria marca. A assessoria de marketing, por outro lado, depende única e exclusivamente dos resultados gerados para os seus clientes. Com isso, o trabalho da Loop foca-se em levantar sistematicamente todos os dados relevantes dentro do seu negócio para encontrar os pontos de ação mais relevantes, e assim tomar decisões que vão gerar resultados satisfatórios. É uma via de mão dupla. O negócio da Loop é vender o seu negócio. Crescemos com o seu crescimento. </p>
+          </details>
+          <details class="faq">
+            <summary class="faq-titulo">Vou ter que investir igual as grandes empresas?</summary>
+            <p class="faq-texto">
+              A estratégia de investimento em mídia será desenhada tendo em conta o estado atual da sua empresa</p>
+          </details>
+          <details class="faq">
+            <summary class="faq-titulo">Quanto tempo vai levar para ter o resultado que quero? Vai demorar muito?</summary>
+            <p class="faq-texto">
+              A verdade nua e crua é que o tempo de retorno varia conforme cada caso específico. Já passaram pela Loop clientes que conseguiram 10x o valor em menos de 2 meses. Por outro lado, já tivemos também clientes que estavam a iniciar do zero, e precisaram de mais alguns meses. A garantia mais objetiva que pode ter é: o crescimento do seu negócio será acelerado. É isso que realmente importa no fim das contas. Pode ser que demore 6 meses com a Loop, até obter resultados, (o que, num cenário sem a nossa Assossoria de Marketing, poderia levar o dobro do tempo, ou mais). Converse com um dos nossos consultores: ele analisará melhor o seu caso, e irá explicar-lhe como podemos atendê-lo da melhor forma possível.</p>
+          </details>
+          <details class="faq">
+            <summary class="faq-titulo">O preço da Loop não é muito alto?</summary>
+            <p class="faq-texto">
+              Qual é o preço do seu sucesso? Quanto dinheiro precisaria investir para fazer com que sua empresa se tornasse a maior do seu setor? O preço que paga por adiar o seu crescimento pode tornar-se absurdamente maior do que aquele que deixou de investir no momento em que a melhor oportunidade de crescer lhe bateu à porta. Outro ponto importante é que o plano de assessoria da Loop Company também pode adaptar-se ao seu contexto atual, permitindo assim que invista a quantia exata que o seu negócio suporta.</p>
+          </details>
+          <details class="faq">
+            <summary class="faq-titulo">Não entendi muito bem… A Loop vai trabalhar no meu negócio ou vai só dar uma consultoria?</summary>
+            <p class="faq-texto">
+              A Consultoria Gratuita que irá receber ao preencher o formulário procura te mostrar como a Assessoria de Marketing da Loop pode fazer por sua empresa.  Uma vez implementada, na assessoria da Loop terá uma equipa preparada para gerir o marketing da sua empresa, enquanto que dentro da equipa que o vai atender, poderá solicitar consultorias estratégicas para que consiga tomar decisões mais alinhadas com o seu negócio.</p>
+          </details> 
         </div>
+        <a href="#" class="button-roxo">agendar uma reunião</a>
       </section>
     </main>
+    <footer>
+      <div class="info">
+        <img src="./assets/img/logo.png" alt="Logomarca da Loop Company">
+        <a href="#header">
+          <img src="./assets/img/arrow-purple.png" alt="">
+          <h2 class="destaque">Retornar ao topo</h2>
+        </a>
+      </div>
+      <div class="traco-footer"></div>
+      <div class="copyrights">
+        <p>2023 Loop Company. Todos os direitos reservados. Política de privacidade</p>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

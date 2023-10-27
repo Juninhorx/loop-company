@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
+
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --color-white: #fff;
     --color-black: #000000;
@@ -31,6 +36,7 @@
 body {
     width: 100%;
     font-family: 'Poppins';
+    scroll-behavior: smooth;
 }
 
 header {
@@ -398,7 +404,7 @@ header {
     border: none;
     background: var(--color-bg-form);
     height: 42px;
-    width: 260px;
+    width: 330px;
     padding: 10px;
     border-radius: 7px;
     color: var(--color-light-font);
@@ -416,7 +422,7 @@ header {
     font-family: 'Poppins';
     border: none;
     height: 42px;
-    width: 260px;
+    width: 330px;
     font-size: 13px;
     font-weight: 600;
     text-transform: uppercase;
@@ -466,3 +472,75 @@ header {
     text-align: center;
     padding: 40px;
 }
+
+.faq-holder {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 65%;
+}
+
+.faq {
+    border-radius: 8px;
+    background: var(--color-bg-form);
+    
+}
+
+.faq-titulo {
+    height: 50px;
+    text-align: start;
+    padding: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.faq-texto {
+    background: var(--color-bg-form);
+    border-radius: 8px;
+    text-align: start;
+    padding: 15px;
+}
+
+footer {
+    background: var(--color-bg-form);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 40px 0 30px;
+
+}
+
+.info a {
+    text-decoration: none;
+}
+
+.traco-footer {
+    height: 1px;
+    width: 80%;
+    background: #949494;
+}
+
+.copyrights p{
+    padding: 40px 0 30px;
+    color: #949494;
+}
+.info a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.info a img {
+    width: 25px;
+    height: 25px;
+}
+
+
