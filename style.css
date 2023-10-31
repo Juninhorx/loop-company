@@ -111,6 +111,7 @@ header {
 .banner img {
     width: 400px;
     padding-bottom: -35px;
+    margin-bottom: -7 px;
 
 }
 .banner img:hover {
@@ -248,87 +249,53 @@ header {
     width: 50%;
 }
 
-/* inicio gallery */
-.gallery-container {
+.slider-container {
     position: relative;
-    padding: 15px;
-    max-width: 800px;
-    margin: 0 auto;
+    width: 756px;
+    overflow: hidden;
 }
 
-.gallery-container button {
+.slider {
+    display: flex;
+    transition: transform 0.5s;
+}
+
+.slide {
+    transition: all 0.4s ease-in-out;
+    width: 756px;
+}
+
+.slide img {
+    width: 756px;
+    height: auto;
+}
+
+button {
     font-size: 30px;
-    font-weight: 600;
-}
-
-.gallery-wrapper {
-    overflow-x: auto;
-}
-
-.gallery-wrapper::-webkit-scrollbar {
-    display: none;
-  }
-
-.gallery {
-    display: flex;
-    flex-flow: row nowrap;
-    gap: 10px;
-    
-}
-
-.arrow-left, .arrow-right {
     position: absolute;
-    top: 0;
-    left: -5%;
-    right: auto;
-    bottom: 0;
-    font-size: 20px;
-    line-height: 400px;
-    width: 40px;
-    text-align: center;
-    color: #000000;
-    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-light-font);
+    background: transparent;
     border: none;
-    background: none;
-}
-
-.arrow-left:hover, .arrow-right:hover {
-    transform: scale(1.1);
-}
-
-.arrow-right {
-    position: absolute;
-    top: 0;
-    left: auto;
-    right: -5%;
-    bottom: 0;
-}
-
-.item {
-    flex-shrink: 0;
-    width: 765px;
-}
-
-.guias {
-    padding-top: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-}
-
-.guia {
-    width: 15px;
-    height: 15px;
-    background: #a7a7a7;
     border-radius: 50%;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 1;
 }
 
-.current-guia {
-    background: var(--color-purple);
-    transition: all ease-in-out 0.4s;
+button:hover {
+    font-size: 40px;
+    box-shadow: 1px 1px 100px 1px var(--color-purple);
 }
-/* gallery fim */
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
 
 .texto-abaixo-carrossel {
     display: flex;
@@ -542,5 +509,3 @@ footer {
     width: 25px;
     height: 25px;
 }
-
-

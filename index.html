@@ -11,7 +11,7 @@
       <img class="logo" src="assets/img/logo.png" alt="Logo da Loop Company" />
       <nav class="menu-nav">
         <ul class="menu">
-          <li><a href="#gallery">o que fazemos</a></li>
+          <li><a href="#slider-link">o que fazemos</a></li>
           <li><a href="#beneficios">benefícios</a></li>
           <li><a href="#faq-section">perguntas frequentes</a></li>
         </ul>
@@ -82,27 +82,16 @@
             mais resultados
           </p>
         </div>
-        <div class="gallery-container" id="gallery">
-          <button class="arrow-left control" aria-label="previousImage">
-            &lt;
-          </button>
-          <button class="arrow-right control" aria-label="nextImage">
-            &gt;
-          </button>
-          <div class="gallery-wrapper">
-            <div class="gallery">
-              <img src="./assets/img/trafego.png" class="item current-item" />
-              <img src="./assets/img/criativos.png" class="item" />
-              <img src="./assets/img/paginas.png" class="item" />
-              <img src="./assets/img/crm.png" class="item" />
-            </div>
+        <div class="slider-container" id="slider-link">
+          <div class="slider">
+            <div class="slide"><img src="./assets/img/trafego.png" alt="Imagem 1"></div>
+            <div class="slide"><img src="./assets/img/criativos.png" alt="Imagem 2"></div>
+            <div class="slide"><img src="./assets/img/paginas.png" alt="Imagem 3"></div>
+            <div class="slide"><img src="./assets/img/crm.png" alt="Imagem 4"></div>
           </div>
-          <div class="guias">
-            <div class="guia current-guia"></div>
-            <div class="guia"></div>
-            <div class="guia"></div>
-            <div class="guia"></div>
-          </div>
+          <button class="prev" onclick="changeSlide(-1)">&#60</button>
+          <button class="next" onclick="changeSlide(1)">	&#62</button>
+        </div>
         </div>
         <div class="texto-abaixo-carrossel container">
           <h2 class="titulo-abaixo-carrossel">Poderá <span class="destaque-escuro-p">personalizar o plano</span> que melhor se adeqúe à sua realidade.</h2>
@@ -187,7 +176,7 @@
     <footer>
       <div class="info">
         <img src="./assets/img/logo.png" alt="Logomarca da Loop Company">
-        <a href="#header">
+        <a id="back-to-top" href="#header">
           <img src="./assets/img/arrow-purple.png" alt="">
           <h2 class="destaque">Retornar ao topo</h2>
         </a>
