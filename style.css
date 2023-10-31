@@ -111,7 +111,7 @@ header {
 .banner img {
     width: 400px;
     padding-bottom: -35px;
-    margin-bottom: -7 px;
+    margin-bottom: -7px;
 
 }
 .banner img:hover {
@@ -125,6 +125,10 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.copy-banner {
+    font-size: 30px;
 }
 .destaque-escuro {
     color: var(--color-dark-purple);
