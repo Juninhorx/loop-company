@@ -1,0 +1,293 @@
+.mobile {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .content {
+        width: 100%;
+    }
+    
+    .copy-banner {
+        font-size: 25px;
+    }
+
+    .texto-banner p {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+    .banner {
+        width: 100%;
+    }
+}
+
+@media (max-width: 850px) {
+    section {
+        width: 100%;
+    }
+
+
+    .faq-holder {
+        width: 90%;
+    }
+
+    .banner {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .banner img {
+        width: 300px;
+    }
+    .copy-banner {
+        font-size: 20px;
+    }
+
+    .imagem-loop {
+        width: 500px;
+    }
+
+    .loop-cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+
+    .carrossel {
+        width: 100%;
+    }
+    .carrossel p{
+        width: 100%;
+    }
+
+    .slider-container {
+        width: 600px;
+    }
+
+    .slide {
+        width: 600px;
+    }
+    
+    .slide img {
+        width: 600px;
+    }
+
+    .titulo-abaixo-carrossel {
+        width: 80%;
+    }
+    
+    .paragrafo-abaixo-carrossel {
+        width: 80%;
+    }
+    
+    .arvore-section img {
+        width: 600px;
+    }
+
+    .form-holder {
+        width: 90%;
+    }
+
+    .input-texto {
+        width: 320px;
+    }
+
+    .submit {
+        width: 320px;
+    }
+
+    .img-table {
+        width: 700px;
+    }
+
+}
+
+@media (max-width: 700px) {
+    
+    .desk {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo {
+        padding: 20px 0;
+        width: 100px;
+    }
+
+    .menu-nav {
+        display: none;
+    }
+
+    .banner {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column-reverse;
+        padding: 10px 5px;
+    }
+
+    .banner img {
+        width: 300px;
+    }
+    .copy-banner {
+        font-size: 20px;
+    }
+    .imagem-banner {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+    .texto-banner {
+        width: 90%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .texto-banner p {
+        font-size: 18px;
+        padding: 30px 0;
+    }
+
+    .button {
+        margin-bottom: 20px;
+    }
+    .imagem-loop {
+        max-width: 90%;
+    }
+
+    .card {
+        width: 45vw;
+        padding: 10px 0;
+    }
+
+    .loop-cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+    }
+
+    .carrossel {
+        width: 100%;
+    }
+    .carrossel p{
+        width: 100%;
+    }
+
+    .slider-container {
+        width: 100%;
+        overflow: auto;
+        scroll-behavior: smooth;
+    }
+    .slide-mobile {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .prev, .next {
+        display: none;
+    }
+    
+    .slide-mobile img {
+        width: 100vw;
+        border-radius: 20px;
+    }
+
+    .titulo-abaixo-carrossel {
+        width: 100%;
+    }
+    
+    .paragrafo-abaixo-carrossel {
+        width: 100%;
+    }
+    
+    .arvore-section img {
+        width: 600px;
+    }
+
+    .form-holder {
+        width: 100%;
+    }
+
+    .input-texto {
+        width: 320px;
+    }
+
+    .submit {
+        width: 320px;
+    }
+
+    .img-table {
+        width: 450px;
+    }
+
+    .arvore-section img {
+        width: 100vw;
+    }
+
+    .texto-arvore-section p{
+        width: 90%;
+    }
+
+    .form-holder {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .input-texto {
+        height: 60px;
+        width: 100%;
+    }
+    
+    .submit {
+        height: 60px;
+    }
+    
+    .img-table {
+        width: 95%;
+    }
+    
+    .faq-holder {
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    
+    .faq-titulo {
+        height: auto;
+    }
+
+    .button-roxo, .button {
+        width: 90%;
+        padding: 20px;
+        font-size: 18px;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    #logo-footer {
+        width: 30px;
+    }
+}

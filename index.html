@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive-style.css" />
     <title>Loop Company</title>
   </head>
   <body>
@@ -27,15 +28,20 @@
               acordo com as suas
               <span class="destaque-escuro">necessidades.</span>
             </h2>
-            <p>
+            <p class="paragrafo-texto-banner">
               Mais clientes a comprar consigo <br />
               através de soluções personalizadas.
             </p>
             <a href="#" class="button">quero vender mais</a>
           </div>
           <div class="imagem-banner">
-            <img
+            <img class="desk"
               src="./assets/img/img-banner.png"
+              alt="Imagem dos proprietarios da Loop Company."
+            />
+            <img
+              class="mobile"
+              src="./assets/img/capa-obile.png"
               alt="Imagem dos proprietarios da Loop Company."
             />
           </div>
@@ -56,8 +62,13 @@
             </p>
           </div>
           <img
-            class="imagem-loop"
+            class="imagem-loop desk"
             src="./assets/img/imagem-loop-desktoppng.png"
+            alt=""
+          />
+          <img
+            class="imagem-loop mobile"
+            src="./assets/img/loop-mobile.png"
             alt=""
           />
           <div class="loop-cards">
@@ -84,10 +95,18 @@
         </div>
         <div class="slider-container" id="slider-link">
           <div class="slider">
-            <div class="slide"><img src="./assets/img/trafego.png" alt="Imagem 1"></div>
-            <div class="slide"><img src="./assets/img/criativos.png" alt="Imagem 2"></div>
-            <div class="slide"><img src="./assets/img/paginas.png" alt="Imagem 3"></div>
-            <div class="slide"><img src="./assets/img/crm.png" alt="Imagem 4"></div>
+            <div class="slide desk"><img src="./assets/img/trafego.png" alt="Imagem 1"></div>
+            <div class="slide-mobile mobile"><img src="./assets/img/trafego-pago-mobile.png" alt="Imagem 1"></div>
+
+            <div class="slide desk"><img src="./assets/img/criativos.png" alt="Imagem 2"></div>
+            <div class="slide-mobile mobile"><img src="./assets/img/criativos-mobile.png" alt="Imagem 2"></div>
+
+            <div class="slide desk"><img src="./assets/img/paginas.png" alt="Imagem 3"></div>
+            <div class="slide-mobile mobile"><img src="./assets/img/paginas-mobile.png" alt="Imagem 3"></div>
+
+            <div class="slide desk"><img src="./assets/img/crm.png" alt="Imagem 4"></div>
+            <div class="slide-mobile mobile"><img src="./assets/img/crm-mobile.png" alt="Imagem 4"></div>
+
           </div>
           <button class="prev" onclick="changeSlide(-1)">&#60</button>
           <button class="next" onclick="changeSlide(1)">	&#62</button>
@@ -100,7 +119,8 @@
         </div>
       </section>
       <section class="arvore-section">
-        <img src="./assets/img/arvore.png" alt="">
+        <img src="./assets/img/arvore.png" alt="" class="desk">
+        <img src="./assets/img/arvore-mobile.png" alt="" class="mobile">
         <div class="texto-arvore-section">
           <h2 class="titulo-abaixo-carrossel">Tenha um <span class="destaque-escuro-p">Marketing</span>  feito para <span class="destaque-escuro-p">gerar mais vendas</span></h2>
           <div class="divisoria-titulo"></div>
@@ -132,12 +152,13 @@
       <section class="table-section">
         <div class="table-holder" id="beneficios">
           <h2 class="titulo-carrossel">Porquê escolher a <span class="destaque">Loop Company?</span></h2>
-          <img class="img-table" src="./assets/img/table.png" alt="">
+          <img class="img-table desk" src="./assets/img/table.png" alt="">
+          <img class="img-table" src="./assets/img/table-mobile.png" alt="">
           <a href="#" class="button-roxo">agendar uma reunião</a>
         </div>
       </section>
       <section class="faq-section" id="faq-section">
-        <h2 class="titulo-carrossel">Porquê escolher a <span class="destaque">Loop Company?</span></h2>
+        <h2 class="titulo-carrossel">Confira algumas <br><span class="destaque">perguntas frequentes</span></h2>
         <div class="divisoria-titulo"></div>
         <div class="faq-holder" id="faq-holder">
           <details class="faq">
@@ -175,7 +196,7 @@
     </main>
     <footer>
       <div class="info">
-        <img src="./assets/img/logo.png" alt="Logomarca da Loop Company">
+        <img id=".logo-footer" src="./assets/img/logo.png" alt="Logomarca da Loop Company">
         <a id="back-to-top" href="#header">
           <img src="./assets/img/arrow-purple.png" alt="">
           <h2 class="destaque">Retornar ao topo</h2>

@@ -34,6 +34,7 @@ html {
 }
 
 body {
+    overflow-x: none;
     width: 100%;
     font-family: 'Poppins';
     scroll-behavior: smooth;
@@ -112,12 +113,8 @@ header {
     width: 400px;
     padding-bottom: -35px;
     margin-bottom: -7px;
+}
 
-}
-.banner img:hover {
-    transform: scale(1.03);
-    transition: all 0.2s ease-in;
-}
 
 .texto-banner {
     width: 50%;
@@ -140,10 +137,11 @@ header {
 
 .destaque {
     color: var(--color-purple);
+    font-weight: 700;
 }
 
 .texto-banner p {
-    font-size: 13px;
+    font-size: 16px;
     padding: 30px 0;
 }
 
@@ -201,6 +199,8 @@ header {
 
 .titulo-loop {
     color: var(--color-purple);
+    font-weight: 700;
+    font-size: 28px;
 }
 .divisoria-titulo {
     margin-top: 15px;
@@ -247,6 +247,11 @@ header {
     width: 60%;
     gap: 20px;
     padding: 30px 0;
+}
+
+.titulo-carrossel {
+    font-weight: 400;
+    font-size: 28px;
 }
 
 .carrossel p {
@@ -497,6 +502,13 @@ footer {
     height: 1px;
     width: 80%;
     background: #949494;
+}
+
+.copyrights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .copyrights p{
