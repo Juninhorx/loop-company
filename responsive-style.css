@@ -194,7 +194,7 @@
     }
     .slide-mobile {
         width: 100%;
-        gap: 10px;
+        padding-right: 10px;
     }
 
     .prev, .next {
@@ -284,10 +284,11 @@
     .info {
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        flex-direction: column-reverse;
+        gap: 100px;
+        justify-content: center;
+        align-items: center;
     }
     
-    #logo-footer {
-        width: 30px;
-    }
+    
 }

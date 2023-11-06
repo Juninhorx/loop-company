@@ -2,7 +2,9 @@
 <html lang="pt-pt">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <!-- Desabilita o Zoom -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsive-style.css" />
     <title>Loop Company</title>
@@ -137,7 +139,7 @@
             <img src="./assets/img/reuniao.png" alt="" class="instructions-image">
           </div>
           <div class="form-div">
-            <form class="page-form">
+            <form class="page-form" action="https://formsubmit.co/rxricafer123@gmail.com" method="POST">
               <input class="input-texto" type="text" name="nome" id="nome" placeholder="Nome">
               <input class="input-texto" type="email" name="email" id="email" placeholder="E-mail">
               <input class="input-texto" type="tel" name="telefone" id="telefone" placeholder="Telemóvel">
@@ -145,6 +147,10 @@
               <input class="input-texto" type="text" name="segmento" id="segmento" placeholder="Segmento de atuação da empresa">
               <input class="input-texto" type="number" name="funcionarios" id="funcionarios" placeholder="Quantos funcionários tem a sua empresa?">
               <input class="submit" type="submit" value="receber uma avaliação gratuita">
+
+              <input type="hidden" name="_subject" value="Novo Contato!">
+              <input type="text" name="_honey" style="display: none;">
+              <input type="hidden" name="_captcha" value="false">
             </form>
           </div>
         </div>
@@ -153,7 +159,7 @@
         <div class="table-holder" id="beneficios">
           <h2 class="titulo-carrossel">Porquê escolher a <span class="destaque">Loop Company?</span></h2>
           <img class="img-table desk" src="./assets/img/table.png" alt="">
-          <img class="img-table" src="./assets/img/table-mobile.png" alt="">
+          <img class="img-table mobile" src="./assets/img/table-mobile.png" alt="">
           <a href="#" class="button-roxo">agendar uma reunião</a>
         </div>
       </section>

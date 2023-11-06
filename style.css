@@ -494,6 +494,10 @@ footer {
 
 }
 
+.info img {
+    width: 150px;
+}
+
 .info a {
     text-decoration: none;
 }
